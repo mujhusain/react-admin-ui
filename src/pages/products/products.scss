@@ -1,0 +1,19 @@
+.products{
+    
+    .info{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        
+        h1{
+            font-size: 25px;
+        }
+
+        button{
+            padding: 5px;
+            cursor: pointer;
+        }
+    }
+}
