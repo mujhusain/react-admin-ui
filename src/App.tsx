@@ -10,23 +10,24 @@ import "./styles/global.scss";
 import User from "./pages/user/User";
 import Product from "./pages/product/Product";
 
-function App() {
-  const Layout = () => {
-    return (
-      <div className="main">
-        <Navbar />
-        <div className="container">
-          <div className="menuContainer">
-            <Menu />
-          </div>
-          <div className="contentContainer">
-            <Outlet />
-          </div>
+const Layout = () => {
+  return (
+    <div className="main">
+      <Navbar />
+      <div className="container">
+        <div className="menuContainer">
+          <Menu />
         </div>
-        <Footer />
+        <div className="contentContainer">
+          <Outlet />
+        </div>
       </div>
-    );
-  };
+      <Footer />
+    </div>
+  );
+};
+
+function App() {
   const router = createBrowserRouter([
     {
       path: "/",
@@ -56,10 +57,11 @@ function App() {
       ],
     },
     {
-      path:"/login",
-      element:<Login/>
-    }
+      path: "/login",
+      element: <Login />,
+    },
   ]);
+
   return <RouterProvider router={router} />;
 }
 
