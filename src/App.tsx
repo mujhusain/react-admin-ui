@@ -9,6 +9,7 @@ import Login from "./components/login/Login";
 import "./styles/global.scss";
 import User from "./pages/user/User";
 import Product from "./pages/product/Product";
+import ErrorPage from "./pages/errorPage/ErrorPage";
 
 const Layout = () => {
   return (
@@ -32,6 +33,7 @@ function App() {
     {
       path: "/",
       element: <Layout />,
+      errorElement: <ErrorPage />,
 
       children: [
         {
