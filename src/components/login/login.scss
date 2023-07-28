@@ -1,3 +1,67 @@
-.login{
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+    .login-container {
+        min-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: $soft-color; /* Light gray background color */
+      
+        /* Center the login page vertically and horizontally */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      
+        h1 {
+          text-align: center;
+          margin-bottom: 20px;
+          font-family: "Arial", sans-serif;
+          color: #333; /* Dark gray heading color */
+        }
+      
+        .input-container {
+          margin-bottom: 15px;
+      
+          label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555; /* Medium gray label color */
+          }
+      
+          input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            color: #333; /* Dark gray text color */
+          }
+        }
+      
+        .checkbox-container {
+          display: flex;
+          align-items: center;
+          margin-bottom: 15px;
+      
+          label {
+            margin-left: 5px;
+            color: #555; /* Medium gray label color */
+          }
+        }
+      
+        button {
+          display: block;
+          width: 100%;
+          padding: 10px;
+          background-color: #007bff; /* Beautiful blue button color */
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+      
     
-}
